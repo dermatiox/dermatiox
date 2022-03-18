@@ -3,7 +3,7 @@
 //Goto URL
 var url = getetParameter('url');
 
-if (url.includes("http://")) {
+if (url.includes("http://") || url.includes("https://")) {
 	window.location.replace(url);
 } else {
 	window.location.replace('http://al84.info/' + url);
